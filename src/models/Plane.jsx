@@ -1,14 +1,29 @@
-import { useGLTF } from "@react-three/drei";
-
+/* eslint-disable react/prop-types */
+import { useAnimations, useGLTF } from "@react-three/drei";
 
 import planeScene from "../assets/3d/plane.glb";
-const Plane = () => {
-      const { scene, animations } = useGLTF(planeScene);
-  return (
-    <mesh>
-   <primitive object={scene} />
-    </mesh>
-  )
-}
+import { useRef } from "react";
+import { useEffect } from "react";
+const Plane = ({ isRotating, ...props }) => {
+  const ref = useRef();
+  const { scene, animations } = useGLTF(planeScene);
+  const { actions } = useAnimations(animations, ref);
 
-export default Plane
+
+  useEffect(()=>{
+    if(isRotating ) {
+      
+       actions['Take 001'].play()
+    }else{
+       actions["Take 001"].stop()
+    }
+
+  },[actions ,isRotating])
+  return (
+    <mesh ref={ref} { ...props}>
+      <primitive object={scene} />
+    </mesh>
+  );
+};
+
+export default Plane;
