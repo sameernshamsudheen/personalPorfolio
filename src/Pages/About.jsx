@@ -21,7 +21,7 @@ const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          riven and detail-oriented Software Engineer with a strong background
+          Driven and detail-oriented Software Engineer with a strong background
           in React.js, Node.js, and Redux, and hands-on experience in building
           full-stack applications. Skilled in creating scalable, efficient, and
           user-friendly solutions, I am passionate about leveraging my technical
