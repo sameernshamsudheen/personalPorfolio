@@ -5,7 +5,8 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main  className="bg-slate-300/20 h-[100vh]" >
+  
         <Outlet />
       </main>
     </>

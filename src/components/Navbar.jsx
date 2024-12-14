@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <header className="header">
       <NavLink to="/">
-        <h1>Sm</h1>
+        <h1 className="select-none">Sameer</h1>
       </NavLink>
       <nav className="flex text-lg gap-7 font-medium">
         <NavLink
@@ -13,7 +13,7 @@ const Navbar = () => {
             isActive ? "text-blue-600" : "text-black"
           }
         >
-          About
+          <p className="select-none">About</p>
         </NavLink>
         <NavLink
           to="/projects"
@@ -21,7 +21,7 @@ const Navbar = () => {
             isActive ? "text-blue-600" : "text-black"
           }
         >
-          Projects
+          <p className="select-none"> Projects</p>
         </NavLink>
       </nav>
     </header>
