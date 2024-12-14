@@ -8,9 +8,9 @@ const Layout = () => {
     console.log(location.pathname);
     
   return (
-    <div className="selected-none">
+    <div className="select-none">
       <Navbar />
-      <main className="bg-slate-300/20">
+      <main className="bg-slate-300/20 select-none">
         <Outlet />
       </main>
       {location.pathname !=="/" &&<Footer/>}

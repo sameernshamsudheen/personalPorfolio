@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <header className="header">
       <NavLink to="/">
-        <h1 className="font-bold">Sameer</h1>
+        <h1 className="italic font-bold">Sameer</h1>
       </NavLink>
       <nav className="flex text-lg gap-7 font-medium">
         <NavLink
