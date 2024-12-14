@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 
+
+
 const Navbar = () => {
   return (
     <header className="header">
       <NavLink to="/">
-        <h1 className="select-none">Sameer</h1>
+        <h1 className="font-bold">Sameer</h1>
       </NavLink>
       <nav className="flex text-lg gap-7 font-medium">
         <NavLink
@@ -13,7 +15,7 @@ const Navbar = () => {
             isActive ? "text-blue-600" : "text-black"
           }
         >
-          <p className="select-none">About</p>
+          About
         </NavLink>
         <NavLink
           to="/projects"
@@ -21,7 +23,7 @@ const Navbar = () => {
             isActive ? "text-blue-600" : "text-black"
           }
         >
-          <p className="select-none"> Projects</p>
+          Projects
         </NavLink>
       </nav>
     </header>
